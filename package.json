@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npx lerna run dev --stream"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.9"
+  }
+}

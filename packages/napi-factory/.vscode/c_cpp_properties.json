@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/Unique/AppData/Local/node-gyp/Cache/20.17.0/include/node/",
+                "${workspaceFolder}/node_modules/node-addon-api"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "${default}",
+            "compilerPath": "D:/ProgramFiles2/Visual Studio/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe"
+        }
+    ],
+    "version": 4
+}

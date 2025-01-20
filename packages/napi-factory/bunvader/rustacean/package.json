@@ -1,0 +1,67 @@
+{
+  "name": "@bunvader/rustacean",
+  "version": "0.0.2",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "rustacean",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin",
+        "aarch64-linux-android",
+        "aarch64-unknown-linux-gnu",
+        "aarch64-unknown-linux-musl",
+        "aarch64-pc-windows-msvc",
+        "armv7-unknown-linux-gnueabihf",
+        "armv7-unknown-linux-musleabihf",
+        "x86_64-unknown-linux-musl",
+        "x86_64-unknown-freebsd",
+        "i686-pc-windows-msvc",
+        "armv7-linux-androideabi",
+        "universal-apple-darwin",
+        "riscv64gc-unknown-linux-gnu"
+      ]
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.4",
+    "ava": "^6.0.1"
+  },
+  "ava": {
+    "timeout": "3m"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "ava",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "packageManager": "yarn@4.5.0",
+  "repository": "https://github.com/chromecruzer/my-plugin-rustacean.git",
+  "description": "This Plug in created by Shyam to make use of RUST TOKIO features in Node/Deno/Bun Runtimes",
+  "optionalDependencies": {
+    "@bunvader/rustacean-win32-x64-msvc": "0.0.2",
+    "@bunvader/rustacean-darwin-x64": "0.0.2",
+    "@bunvader/rustacean-linux-x64-gnu": "0.0.2",
+    "@bunvader/rustacean-darwin-arm64": "0.0.2",
+    "@bunvader/rustacean-android-arm64": "0.0.2",
+    "@bunvader/rustacean-linux-arm64-gnu": "0.0.2",
+    "@bunvader/rustacean-linux-arm64-musl": "0.0.2",
+    "@bunvader/rustacean-win32-arm64-msvc": "0.0.2",
+    "@bunvader/rustacean-linux-arm-gnueabihf": "0.0.2",
+    "@bunvader/rustacean-linux-arm-musleabihf": "0.0.2",
+    "@bunvader/rustacean-linux-x64-musl": "0.0.2",
+    "@bunvader/rustacean-freebsd-x64": "0.0.2",
+    "@bunvader/rustacean-win32-ia32-msvc": "0.0.2",
+    "@bunvader/rustacean-android-arm-eabi": "0.0.2",
+    "@bunvader/rustacean-darwin-universal": "0.0.2",
+    "@bunvader/rustacean-linux-riscv64-gnu": "0.0.2"
+  }
+}

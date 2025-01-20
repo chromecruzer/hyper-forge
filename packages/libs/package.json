@@ -1,0 +1,29 @@
+{
+  "name": "@demo-1/libs",
+  "version": "1.0.0",
+  "description": "This is Library Module Utilized in Multiple Projects. Developed By Shyam. M ",
+  "keywords": [
+    "#Nodejs",
+    "#Deno",
+    "#Bun",
+    "#Rust",
+    "#Wasm",
+    "#lerna",
+    "#Nx",
+    "#Docker"
+  ],
+  "author": "chromecruzer <shayammurali@gmail.com>",
+  "homepage": "https://github.com/chromecruzer",
+  "license": "ISC",
+  "main": "lib/libs.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/libs.test.js"
+  }
+}

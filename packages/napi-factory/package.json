@@ -1,0 +1,22 @@
+{
+  "name": "@demo-1/napi-factory",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "build:cpp:plugin": "node-gyp clean && node-gyp configure && node-gyp build",
+    "build:rs:plugin": "cd bunvader/rustacean && npm i && npm run build",
+    "dev": "nodemon src/app.js --inspect"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@bunvader/rustacean": "^0.0.2",
+    "express": "^4.21.1",
+    "node-addon-api": "^8.2.1"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.2.0"
+  }
+}

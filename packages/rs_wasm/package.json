@@ -1,0 +1,12 @@
+{
+  "name": "@demo-1/rs_wasm",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cargo watch -x run",
+    "build": "cargo run build --release"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

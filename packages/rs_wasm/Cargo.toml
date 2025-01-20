@@ -1,0 +1,14 @@
+[package]
+name = "rs_wasm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+database = {path = "./database"}
+
+[dev-dependencies]
+
+[workspace]
+members = [
+    "database",
+]

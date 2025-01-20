@@ -1,0 +1,66 @@
+  # type User {
+  #   id: ID!
+  #   name: String!
+  #   email: String!
+  # }
+
+  # type Query {
+  #   users: [User!]!
+  #   user(id: ID!): User
+  # }
+
+  # type Mutation {
+  #   createUser(name: String!, email: String!): User
+  #   updateUser(id: ID!, name: String, email: String): User
+  #   deleteUser(id: ID!): User
+  # }
+
+
+  type User {
+  id: ID!
+  name: String!
+  email: String!
+}
+
+type Query {
+  users: [User!]!
+  user(id: ID!): User
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+}
+
+input UpdateUserInput {
+  name: String
+  email: String
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): CreateUserResponse
+  updateUser(id: ID!, input: UpdateUserInput!): UpdateUserResponse
+  deleteUser(id: ID!): DeleteUserResponse
+}
+
+type DeleteUserResponse {
+  success: Boolean!
+  message: String
+}
+
+type UpdateUserResponse {
+  msg: String!
+  user: User
+}
+
+type CreateUserResponse {
+  msg: String!
+  user: User
+}
+
+type Subscription {
+  # userCreated: User
+  # userUpdated: User
+  userDeleted: User
+  greetings: String
+}

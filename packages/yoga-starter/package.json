@@ -1,0 +1,27 @@
+{
+  "name": "@demo-1/yoga-starter",
+  "type": "module",
+  "scripts": {
+    "dev:tsx": "tsx watch src/index.ts",
+    "dev": "nodemon --inspect src/app.js ",
+    "build": "node esbuild.config.cjs",
+    "start": "node --max-old-space-size=512 dist/bundle.main.js"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^7.0.0",
+    "@graphql-tools/merge": "^9.0.9",
+    "connect": "^3.7.0",
+    "graphql": "^16.6.0",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-ws": "^5.16.0",
+    "graphql-yoga": "^5.10.1",
+    "router": "^1.3.8",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.7.1"
+  }
+}

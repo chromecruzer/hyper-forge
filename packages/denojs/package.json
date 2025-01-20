@@ -1,0 +1,12 @@
+{
+  "name": "@demo-1/denojs",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "deno task dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

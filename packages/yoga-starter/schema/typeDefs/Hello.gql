@@ -1,0 +1,8 @@
+# server/schema/typeDefs/Query.gql
+type Query {
+  hello: String
+}
+
+type Mutation {
+  create: String
+}
